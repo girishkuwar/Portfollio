@@ -13,12 +13,12 @@
   </head>
   <body>
     <nav>
-      <div class="navlist">
+      <div id="navlist" class="navlist">
         <ul>
-          <li class="selected"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <a href="#home"><li class="list selected">Home</li></a>
+          <a href="#about"><li class="list">About</li></a>
+          <a href="#skills"><li class="list">Skills</li></a>
+          <a href="#contact"><li class="list">Contact</li></a>
         </ul>
       </div>
     </nav>
@@ -57,7 +57,7 @@
       </svg>
     </div>
 
-    <section class="hero">
+    <section id="home" class="hero">
       <div class="heading">
         <h1>
           Hi There <br />
@@ -65,7 +65,7 @@
         </h1>
         <h4>I am Into Web Develop</h4>
         <div class="btns">
-          <button class="bbutns">About Me</button>
+          <a href="#about"><button class="bbutns">About Me</button></a>
         </div>
       </div>
     </section>
@@ -103,7 +103,7 @@
       </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section  id="contact" class="contact">
       <div class="container">
         <h1>Contact US</h1>
         <div class="row">
@@ -119,5 +119,6 @@
         </div>
       </div>
     </section>
+    <script src="js/script3.js"></script>
   </body>
 </html>
