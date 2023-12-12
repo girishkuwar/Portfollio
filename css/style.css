@@ -1,0 +1,25 @@
+body {
+    background: rgb(34, 34, 34);
+}
+.container {
+}
+.container path {
+    fill: transparent;
+    stroke-width: 1.5;
+    stroke: aqua;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+}
+.container:hover path {
+    animation: animatepath .51s linear forwards;
+}
+
+
+@keyframes animatepath {
+    0%{
+        stroke-dashoffset: 500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

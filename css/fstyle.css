@@ -1,0 +1,19 @@
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.side {
+    height: 25px;
+    width: 25px;
+    border-left: 1px solid green;
+    border-bottom: 1px solid green;
+    position: absolute;
+}
+.side2{
+    height: 25px;
+    width: 25px;
+    border-right: 1px solid green;
+    border-top: 1px solid green;
+    position: absolute;
+}
