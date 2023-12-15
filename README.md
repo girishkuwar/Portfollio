@@ -1,1 +1,1 @@
-girishkuwar.versel.app
+https://girishkuwar.vercel.app
