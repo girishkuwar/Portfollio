@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Girish Kuwar</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="img/GSLOGO.png">
+    <link rel="icon" type="image/x-icon" href="img/GSLOGO.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
@@ -83,7 +83,13 @@
         <div class="">
           <img src="./img/boy.png" alt="" />
         </div>
-      </div>    
+      </div>
+      <div class="skewed-container">
+        <div class="normal-container"><button>1 button</button></div>
+        <div class="normal-container"><button>2 button</button></div>
+        <div class="normal-container"><button>3 button</button></div>
+        <div class="normal-container"><button>3 button</button></div>
+      </div>
     </section>
 
     <section id="skills" class="skills">
@@ -93,32 +99,63 @@
           <h4>React</h4>
         </div>
         <div class="skills-card bordershine webteck">
-            <i class='bx bxl-html5' style='color:wheat' ></i>
-          <h4>HTML CSS and JavaScript</h4>
+          <i class="bx bxl-html5" style="color: wheat"></i>
+          <h4>HTML</h4>
         </div>
         <div class="skills-card bordershine webteck">
-            <i class='bx bx-expand-horizontal' style='color:wheat' ></i>
+          <i class="bx bx-check-square" style="color: wheat"></i>
+          <h4>UI and UX</h4>
+        </div>
+      </div>
+      <div class="container-skills">
+        <div class="skills-card bordershine github">
+          <i class="bx bxl-github"></i>
+          <h4>git & github</h4>
+        </div>
+        <div class="skills-card bordershine bootstrap">
+          <i class="bx bxl-bootstrap" style="color: wheat"></i>
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="skills-card bordershine firebase">
+          <i class="bx bxl-firebase" style="color: wheat"></i>
+          <h4>firebase</h4>
+        </div>
+      </div>
+      <div class="container-skills">
+        <div class="skills-card bordershine css">
+          <i class="bx bxl-css3"></i>
+          <h4>Css</h4>
+        </div>
+        <div class="skills-card bordershine javascript">
+          <i class="bx bxl-javascript" style="color: wheat"></i>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="skills-card bordershine webteck">
+          <i class="bx bx-expand-horizontal" style="color: wheat"></i>
           <h4>UI and UX</h4>
         </div>
       </div>
     </section>
 
-    <section  id="contact" class="contact">
-      <div class="container">
-        <h1>Contact US</h1>
-        <div class="row">
-          <input type="text" placeholder="FullName">
-          <input type="text" placeholder="Email">
-        </div>
-        <div class="row">
-          <input type="text" placeholder="Mobile Number">
-          <input type="text" placeholder="Subject">
-        </div>
-        <div class="row">
-          <textarea placeholder="Your Message" name="" id="" cols="30" rows="10"></textarea>
-        </div>
-      </div>
+    <section id="contact" class="contact">
+      <form onsubmit="emailSend(); reset(); return false" class="container">
+          <h1>Contact US</h1>
+          <div class="row">
+            <input id="name" name="name" type="text" placeholder="FullName" />
+            <input id="email" name="email" type="text" placeholder="Email" />
+          </div>
+          <div class="row">
+            <input id="phone" name="phone" type="text" placeholder="Mobile Number" />
+            <input id="subject" name="subject" type="text" placeholder="Subject" />
+          </div>
+          <div class="row">
+            <textarea placeholder="Your Message" name="" id="message" cols="30" rows="10" ></textarea>
+          </div>
+          <button type="submit" class="bbutns">Submit</button>
+      </form>
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="js/script3.js"></script>
   </body>
 </html>
