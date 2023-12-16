@@ -28,12 +28,14 @@ body::-webkit-scrollbar {
   padding: 5px 10px;
   /* background: gray; */
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
   align-items: center;
   justify-content: space-between;
 }
 .navlist .logo img {
-  height: 50px;
+  height: 30px;
+  filter: brightness(0.5);
 }
 .navlist ul {
   display: flex;
@@ -56,7 +58,7 @@ body::-webkit-scrollbar {
 }
 .navlist li.selected {
   /* background: rgba(0, 0, 0, 0.568); */
-  color: rgb(121, 28, 44);
+  color: rgb(185, 41, 65);
   position: relative;
   width: 100%;
   transition: 1s;
@@ -117,6 +119,9 @@ body::-webkit-scrollbar {
   font-size: 2rem;
   margin-top: 100px;
   transform: translateX(-150px);
+}
+.heading span {
+  color: rgb(185, 41, 65);
 }
 
 .bbutns {
@@ -206,6 +211,10 @@ body::-webkit-scrollbar {
 }
 .about .container p {
   font-size: 1.1rem;
+}
+.about img {
+  filter: brightness(0.5);
+  height: 5rem;
 }
 .education {
   height: 100vh;
