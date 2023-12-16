@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
   /* background: gray; */
   width: 100%;
   z-index: 1000;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   align-items: center;
   justify-content: space-between;
 }
