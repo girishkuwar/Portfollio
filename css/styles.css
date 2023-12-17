@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
 }
 
 .background-img {
-  height: 100vh;
+  height: 100%;
   /* width: 100vh; */
   position: fixed;
   transform: translateX(-200px);
@@ -116,6 +116,7 @@ body::-webkit-scrollbar {
   transform: translateX(350px);
   object-fit: contain;
   filter: brightness(0.9);
+  transition: 1s;
 }
 
 .hero {
@@ -205,6 +206,7 @@ body::-webkit-scrollbar {
   height: 100vh;
   display: grid;
   place-items: center;
+  align-content: space-evenly;
 }
 .about .container {
   backdrop-filter: blur(5px);
@@ -224,7 +226,7 @@ body::-webkit-scrollbar {
   height: 5rem;
 }
 .education {
-  height: 100vh;
+  padding: 10% 7%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,6 +269,13 @@ p {
   justify-content: center;
   color: wheat;
   background: #00000060;
+}
+.skills h1 {
+  font-size: 2rem;
+  margin: 0 50px;
+}
+.skills-container {
+  display: flex;
 }
 .container-skills {
   transform: rotate(25deg);
@@ -324,6 +333,13 @@ p {
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.contact-s {
+  display: flex;
+  width: 100%;
 }
 .contact-info {
   color: wheat;
@@ -348,11 +364,8 @@ p {
   gap: 2px;
   width: 70%;
 }
-.contact .container h1 {
+.contact  h1 {
   color: wheat;
-  text-align: left;
-  margin-right: 200px;
-  margin-bottom: 50px;
   font-size: 2rem;
 }
 .contact .row {
@@ -425,9 +438,9 @@ p {
 }
 
 @media (max-width: 698px) {
-  section {
+  /* section {
     padding: 10px 7%;
-  }
+  } */
   .navlist ul{
     padding-right: 10px;
     font-size: .8rem;
@@ -449,8 +462,15 @@ p {
     font-size: .9rem;
   }
   .contact {
-    padding: 50px 7%;
+    gap: 0;
+    width: 100%;
+  }
+  .contact-s {
+    padding: 40px 7%;
     flex-direction: column;
+  }
+  .contact-s Button {
+    margin: 20px 0;
   }
 
   .skills-card i {
@@ -488,8 +508,11 @@ p {
     height: 3rem;
   }
   .education {
-    padding: 10px 10%;
+    padding: 10px 15%;
     font-size: .8rem;
+  }
+  .navlist {
+    width: 100%;
   }
   .navlist ul {
     flex-direction: column;
@@ -512,13 +535,30 @@ p {
   .navlist ul.open {
     top: 0;
   }
-  
+  .skills {
+    flex-direction: column;
+  }
+  .container-skills {
+    transform: rotate(0deg);
+    margin-top: 50px;
+  }
   .container-skills .skills-card {
+    transform: rotate(0deg);
     height: 100px;
     width: 100px;
     font-size: .7rem;
+    margin: 5px;
+  }
+  .skills-card:hover {
+    transform: scale(1.1);
   }
   .skills-card i {
     font-size: 2rem;
+  }
+  .about {
+    padding: 10px 1%;
+  }
+  .about .container {
+    gap: 10px;
   }
 }
