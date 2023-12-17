@@ -11,16 +11,12 @@ for (var i = 0; i < navlist.length; i++) {
     });
 }
 
-function emailSend() {
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "girishkuwar11@gmail.com",
-        Password : "6C4031B6B99464C8F40E800E6FB4D768A42B",
-        To : 'gukuwar@gmail.com',
-        From : "girishkuwar11@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
+let menu = document.querySelector('#menu');
+let navlistR = document.querySelector('.navlist ul');
+menu.addEventListener("click", myFunction);
+  
+   
+function myFunction() {
+   menu.classList.toggle("bx-x");
+   navlistR.classList.toggle('open');
 }
