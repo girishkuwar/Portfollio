@@ -14,9 +14,58 @@ for (var i = 0; i < navlist.length; i++) {
 let menu = document.querySelector('#menu');
 let navlistR = document.querySelector('.navlist ul');
 menu.addEventListener("click", myFunction);
-  
-   
+
+
 function myFunction() {
-   menu.classList.toggle("bx-x");
-   navlistR.classList.toggle('open');
+    menu.classList.toggle("bx-x");
+    navlistR.classList.toggle('open');
 }
+
+let contactForm = document.getElementById("contact-form");
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let username = document.getElementById("name");
+    let phone = document.getElementById("phone");
+    let email = document.getElementById("email");
+    let subject = document.getElementById("subject");
+    let message = document.getElementById("message");
+
+    if (username.value == "" || phone.value == "" || email.value == "" || subject.value == "" || message.value == "") {
+        alert("Ensure you input a value in both fields!");
+    } else {
+        createMsg(username.value, phone.value, email.value, subject.value, message.value);
+    }
+})
+
+
+
+
+
+
+const createMsg = async (name, phone, email, sub, msg) => {
+    let options = {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            "email": email,
+            "phone": phone,
+            "name": name,
+            "subject": sub,
+            "msg": msg
+        }),
+    }
+
+    let p = await fetch("https://portfoliio.up.railway.app/api/collections/users_meassage/records", options)
+        .then((res) => res.json())
+        .then((json) => {
+            alert(`Message Send Thank you for visiting ${name}`);
+            console.log(json)
+        }
+        );
+
+}
+
+
