@@ -566,10 +566,13 @@ p {
   }
   .container-skills .skills-card {
     transform: rotate(0deg);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 130px;
     font-size: .7rem;
     margin: 5px;
+  }
+  .skewed-container .normal-container {
+    padding: 10px 15px;
   }
   .skills-card:hover {
     transform: scale(1.1);
