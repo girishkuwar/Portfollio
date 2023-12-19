@@ -21,6 +21,33 @@ function myFunction() {
     navlistR.classList.toggle('open');
 }
 
+
+let logo = document.getElementById("logo");
+let id = 0;
+logo.addEventListener("click" , (e) => {
+    id++;
+    console.log(id);
+    if(id > 3){
+        let locker =  document.querySelector(".secret");
+        locker.style.display = "block";
+        // console.log(locker);
+        locker.addEventListener("change" , (e) => {
+            if(e.target.value == "447474") {
+                localStorage.setItem('user','447474');
+                window.location.href = "/admin.html";
+                e.target.value = "";
+            }
+            // console.log(e.target.value);
+        })
+    }
+})
+
+
+
+
+
+
+
 let contactForm = document.getElementById("contact-form");
 contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -37,6 +64,18 @@ contactForm.addEventListener("submit", (e) => {
         createMsg(username.value, phone.value, email.value, subject.value, message.value);
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

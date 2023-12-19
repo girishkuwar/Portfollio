@@ -63,6 +63,14 @@ body::-webkit-scrollbar {
   /* width: 100%; */
   transition: 1s;
 }
+.secret {
+  position: absolute;
+  height: 100%;
+  background: #070707;
+  /* width: 1rem; */
+  text-align: center;
+  display: none;
+}
 #menu {
   color: wheat;
   font-size: 1.5rem;
