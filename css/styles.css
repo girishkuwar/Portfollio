@@ -228,9 +228,9 @@ body::-webkit-scrollbar {
 .education {
   padding: 10% 7%;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .education h1 {
   color: wheat;
@@ -245,9 +245,15 @@ body::-webkit-scrollbar {
 }
 .skewed-container .normal-container {
   border: 1px solid rgb(137, 30, 47);
-  padding: 5px 25px;
+  padding: 30px 25px;
   margin: 20px 0;
   backdrop-filter: blur(5px);
+}
+.divider {
+  padding: 10px;
+  border: 1px solid rgb(185, 41, 65);
+  border-top: none;
+  border-bottom: none;
 }
 .normal-container .skew-content {
   transform: skew(25deg);
@@ -266,7 +272,7 @@ p {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: wheat;
   background: #00000060;
 }
@@ -367,6 +373,11 @@ p {
 .contact  h1 {
   color: wheat;
   font-size: 2rem;
+}
+.heading-text {
+  font-size: 2.3rem;
+  color: wheat;
+  text-decoration: underline;
 }
 .contact .row {
   width: 60%;
@@ -537,6 +548,9 @@ p {
   }
   .skills {
     flex-direction: column;
+  }
+  .education {
+    flex-direction: column-reverse;
   }
   .container-skills {
     transform: rotate(0deg);
