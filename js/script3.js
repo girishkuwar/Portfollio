@@ -49,22 +49,22 @@ logo.addEventListener("click" , (e) => {
 
 
 
-let contactForm = document.getElementById("contact-form");
-contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+// let contactForm = document.getElementById("contact-form");
+// contactForm.addEventListener("submit", (e) => {
+//     e.preventDefault();
 
-    let username = document.getElementById("name");
-    let phone = document.getElementById("phone");
-    let email = document.getElementById("email");
-    let subject = document.getElementById("subject");
-    let message = document.getElementById("message");
+//     let username = document.getElementById("name");
+//     let phone = document.getElementById("phone");
+//     let email = document.getElementById("email");
+//     let subject = document.getElementById("subject");
+//     let message = document.getElementById("message");
 
-    if (username.value == "" || phone.value == "" || email.value == "" || subject.value == "" || message.value == "") {
-        alert("Ensure you input a value in both fields!");
-    } else {
-        createMsg(username.value, phone.value, email.value, subject.value, message.value);
-    }
-})
+//     if (username.value == "" || phone.value == "" || email.value == "" || subject.value == "" || message.value == "") {
+//         alert("Ensure you input a value in both fields!");
+//     } else {
+//         createMsg(username.value, phone.value, email.value, subject.value, message.value);
+//     }
+// })
 
 
 
