@@ -587,3 +587,10 @@ p {
     gap: 10px;
   }
 }
+
+@media (max-width: 1200px) {
+
+    body {
+      background-color: green;
+    }
+}

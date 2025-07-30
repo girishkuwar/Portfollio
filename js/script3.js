@@ -8,6 +8,7 @@ for (var i = 0; i < navlist.length; i++) {
         var current = document.getElementsByClassName("selected");
         current[0].className = current[0].className.replace(" selected", "");
         this.className += " selected";
+        console.log(this);
     });
 }
 
