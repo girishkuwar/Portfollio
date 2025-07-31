@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <style>
+      .skills-scroller-wrapper {
+        overflow: hidden;
+        white-space: nowrap;
+        background: #0a0a0a;
+        padding: 20px 0;
+      }
+
+      .skills-scroller {
+        display: inline-flex;
+        animation: scrollSkills 20s linear infinite;
+      }
+
+      .skill-item {
+        flex: 0 0 auto;
+        margin: 0 2rem;
+        font-size: 1.25rem;
+        color: #f7e78e;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 12px 24px;
+        border-radius: 10px;
+        border: 1px solid #ff0055;
+        box-shadow: 0 0 10px #ff0055 inset;
+      }
+
+      @keyframes scrollSkills {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="skills-scroller-wrapper">
+      <div class="skills-scroller">
+        <div class="skills-card bordershine react">
+          <i class="bx bxl-react"></i>
+          <h4>React</h4>
+        </div>
+        <div class="skills-card bordershine webteck">
+          <i class="bx bxl-html5" style="color: wheat"></i>
+          <h4>HTML</h4>
+        </div>
+        <div class="skills-card bordershine webteck">
+          <i class="bx bx-check-square" style="color: wheat"></i>
+          <h4>Responsive Design</h4>
+        </div>
+        <div class="skills-card bordershine github">
+          <i class="bx bxl-github"></i>
+          <h4>git & github</h4>
+        </div>
+        <div class="skills-card bordershine bootstrap">
+          <i class="bx bxl-bootstrap" style="color: wheat"></i>
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="skills-card bordershine firebase">
+          <i class="bx bxl-firebase" style="color: wheat"></i>
+          <h4>firebase</h4>
+        </div>
+        <div class="skills-card bordershine css">
+          <i class="bx bxl-css3"></i>
+          <h4>Css</h4>
+        </div>
+        <div class="skills-card bordershine javascript">
+          <i class="bx bxl-javascript" style="color: wheat"></i>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="skills-card bordershine webteck">
+          <i class="bx bx-expand-horizontal" style="color: wheat"></i>
+          <h4>UI and UX</h4>
+        </div>
+
+        <!-- Duplicate for seamless infinite scroll -->
+        <div class="skills-card bordershine react">
+          <i class="bx bxl-react"></i>
+          <h4>React</h4>
+        </div>
+        <div class="skills-card bordershine webteck">
+          <i class="bx bxl-html5" style="color: wheat"></i>
+          <h4>HTML</h4>
+        </div>
+        <div class="skills-card bordershine webteck">
+          <i class="bx bx-check-square" style="color: wheat"></i>
+          <h4>Responsive Design</h4>
+        </div>
+        <div class="skills-card bordershine github">
+          <i class="bx bxl-github"></i>
+          <h4>git & github</h4>
+        </div>
+        <div class="skills-card bordershine bootstrap">
+          <i class="bx bxl-bootstrap" style="color: wheat"></i>
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="skills-card bordershine firebase">
+          <i class="bx bxl-firebase" style="color: wheat"></i>
+          <h4>firebase</h4>
+        </div>
+        <div class="skills-card bordershine css">
+          <i class="bx bxl-css3"></i>
+          <h4>Css</h4>
+        </div>
+        <div class="skills-card bordershine javascript">
+          <i class="bx bxl-javascript" style="color: wheat"></i>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="skills-card bordershine webteck">
+          <i class="bx bx-expand-horizontal" style="color: wheat"></i>
+          <h4>UI and UX</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

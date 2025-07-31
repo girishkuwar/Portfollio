@@ -20,6 +20,19 @@ function myFunction() {
 }
 
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      entry.target.classList.remove('hidden-on-load');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+document.querySelectorAll('.scroll-animate').forEach(el => {
+  observer.observe(el);
+});
 
 const form = document.getElementById('contact-form');
   const status = document.getElementById('form-status');

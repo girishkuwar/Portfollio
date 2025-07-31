@@ -95,6 +95,16 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: wheat;
+  transition: background-color 9999s ease-in-out 0s;
+  color: wheat;
+}
+
+
+
 .navlist li.selected::before {
   content: "";
   height: 15px;
@@ -444,6 +454,29 @@ p {
 
 .contact-info .info a {
   color: wheat;
+}
+
+.scroll-animate {
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  will-change: transform, opacity;
+}
+
+.from-left {
+  transform: translateX(-50px);
+}
+
+.from-right {
+  transform: translateX(50px);
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden-on-load {
+  visibility: hidden;
 }
 
 .contact .container {
