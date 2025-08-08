@@ -1,14 +1,11 @@
-
-
-[Girishkuwar.vercel.app](https://girishkuwar.vercel.app/)
-
 # 🌐 Portfolio Website
 
 This is a personal portfolio website built using **HTML**, **CSS**, and **JavaScript**. It showcases your skills, education, projects, and contact information in a responsive and interactive layout.
 
 ## 🚀 Live Demo
 
-🔗 View Live: https://your-username.github.io/your-repo-name/
+🔗 View Live: 
+[Girishkuwar.vercel.app](https://girishkuwar.vercel.app/)
 
 > Replace the above link with your actual GitHub Pages deployment link.
 
