@@ -7,8 +7,6 @@ This is a personal portfolio website built using **HTML**, **CSS**, and **JavaSc
 🔗 View Live: 
 [Girishkuwar.vercel.app](https://girishkuwar.vercel.app/)
 
-> Replace the above link with your actual GitHub Pages deployment link.
-
 ---
 
 ## 🧰 Tech Stack
@@ -37,7 +35,6 @@ This is a personal portfolio website built using **HTML**, **CSS**, and **JavaSc
 
 ## 📸 Screenshots
 
-> Replace these with actual screenshots from your project:
 
 - Home Section: ![PortFolio](https://i.postimg.cc/jqpM3MMZ/image.png) 
 - About Section: `screenshots/about.png`  
