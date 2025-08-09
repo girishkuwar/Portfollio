@@ -517,8 +517,9 @@ p {
   width: 49%;
   margin: 4px 5px;
   background: rgb(81 51 51 / 16%);
+  background-color: #1e1e1e40;
   color: wheat;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
 }
 
 .contact textarea {
@@ -528,7 +529,8 @@ p {
   width: 100%;
   margin: 2px 5px;
   color: wheat;
-  background: rgb(81 51 51 / 16%);
+  /* background: rgb(81 51 51 / 16%); */
+  background-color: #1e1e1e40;
 }
 
 @keyframes blick {
