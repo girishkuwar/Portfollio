@@ -269,10 +269,12 @@ input:-webkit-autofill {
   display: grid;
   place-items: center;
   align-content: space-evenly;
+  background-color: #1212124b;
 }
 
 .about .container {
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
+  background-color: #1e1e1e40;
   align-items: center;
   display: flex;
   gap: 50px;
@@ -315,7 +317,8 @@ input:-webkit-autofill {
   border: 1px solid rgb(137, 30, 47);
   padding: 30px 25px;
   margin: 20px 0;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
+  background-color: #1e1e1e40;
 }
 
 .divider {
@@ -331,7 +334,7 @@ input:-webkit-autofill {
   color: wheat;
   padding: 5px 10px;
   border: none;
-  cursor: url("../img/cursor.png"), auto;
+  /* cursor: url("../img/cursor.png"), auto; */
 }
 
 .skew-content h4,
@@ -353,7 +356,7 @@ p {
   align-items: center;
   justify-content: space-evenly;
   color: wheat;
-  background: #00000060;
+  background: #1e1e1e40;
 }
 
 .skills h1 {
@@ -385,7 +388,8 @@ p {
   margin: 10px;
   background: rgba(137, 30, 48, 0.027);
   transition: 0.5s;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
+  background-color: #1e1e1e40;
 }
 
 
