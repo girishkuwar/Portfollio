@@ -254,8 +254,15 @@ input:-webkit-autofill {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .typewriter-text {
@@ -264,6 +271,7 @@ input:-webkit-autofill {
   font-family: 'Courier New', monospace;
   position: relative;
 }
+
 .about {
   height: 100vh;
   display: grid;
@@ -575,6 +583,13 @@ p {
   }
 }
 
+@media (max-width: 1358px) {
+  .background-img video {
+    transform: translateX(626px);
+  }
+
+}
+
 @media (max-width: 698px) {
 
   /* section {
@@ -739,4 +754,3 @@ p {
     font-size: 1rem;
   }
 }
-
