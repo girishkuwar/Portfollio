@@ -238,6 +238,7 @@ input:-webkit-autofill {
   padding: 5px;
   transition: 0.51s;
   margin: 0 2px;
+  color: wheat;
 }
 
 .links i:hover {
