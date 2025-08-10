@@ -31,10 +31,9 @@ body::-webkit-scrollbar {
   display: flex;
   position: fixed;
   padding: 5px 10px;
-  /* background: gray; */
   width: 100%;
   z-index: 1000;
-  background-color: #1e1e1e40;
+  background-color: #000000c2;
   align-items: center;
   justify-content: space-between;
 }
