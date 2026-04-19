@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Girish Kuwar's Portfolio - Web Developer, React Enthusiast">
-  <meta name="keywords" content="Girish Kuwar, Web Developer, React, JavaScript, Portfolio">
-  <meta name="author" content="Girish Kuwar">
+  <meta name="description" content="Girish Kuwar's Portfolio - Web Developer, React Enthusiast" />
+  <meta name="keywords" content="Girish Kuwar, Web Developer, React, JavaScript, Portfolio" />
+  <meta name="author" content="Girish Kuwar" />
   <title>Girish Kuwar | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/x-icon" href="img/GSLOGO.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
@@ -17,7 +20,7 @@
   <nav>
     <div id="navlist" class="navlist">
       <div class="logo">
-        <img id="logo" src="img/GSLOGO.png" alt="" />
+        <img id="logo" src="img/GSLOGO.png" alt="Girish logo" />
         <input class="secret" type="text" placeholder="CODE" />
       </div>
       <ul>
@@ -33,7 +36,7 @@
   </nav>
 
   <div class="background-img">
-    <video loading="lazy" autoplay muted loop src="/img/0001-0844.webm"></video>
+    <video loading="lazy" autoplay muted loop playsinline poster="img/Blackback.webp" src="img/0001-0844.webm"></video>
   </div>
 
   <section id="home" class="hero">
@@ -46,27 +49,26 @@
       <div class="btns">
         <a href="#about"><button class="bbutns">About Me</button></a>
       </div>
-      
+
       <div class="links">
         <a href="https://www.facebook.com/girish.kuwar.74"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/girish.kuwar/"><i class="bx bxl-twitter "></i></a>
+        <a href="https://www.instagram.com/girish.kuwar/"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.linkedin.com/in/girishkuwar/"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
   </section>
-  <!-- comment -->
-  <!-- added commit to new msg -->
+
   <section id="about" class="about">
     <div class="container scroll-animate from-left hidden-on-load">
-      <div class="">
+      <div>
         <h1>Full Stack Developer</h1>
         <p>
-    I’m a full-stack developer focused on building practical, data-driven applications that solve real problems.
-My work combines frontend development with backend systems to create complete, production-ready solutions. 
-I have experience working with modern technologies like React, Supabase, Node.js, and I’m currently expanding 
+I'm a full-stack developer focused on building practical, data-driven applications that solve real problems.
+My work combines frontend development with backend systems to create complete, production-ready solutions.
+I have experience working with modern technologies like React, Supabase, Node.js, and I'm currently expanding
 into .NET for enterprise-level development.
-    I’m particularly interested in transforming raw data into meaningful insights through interactive dashboards 
-and visualization tools. Currently, I’m working on projects that involve data processing, analytics, and scalable 
+I'm particularly interested in transforming raw data into meaningful insights through interactive dashboards
+and visualization tools. Currently, I'm working on projects that involve data processing, analytics, and scalable
 application design.
         </p>
       </div>
@@ -102,13 +104,25 @@ application design.
           <i class="bx bxl-react"></i>
           <h4>React</h4>
         </div>
-        <div class="skills-card bordershine webteck">
-          <i class="bx bxl-html5" style="color: wheat"></i>
+        <div class="skills-card bordershine">
+          <i class="bx bxl-html5"></i>
           <h4>HTML</h4>
         </div>
-        <div class="skills-card bordershine webteck">
-          <i class="bx bx-check-square" style="color: wheat"></i>
+        <div class="skills-card bordershine">
+          <i class="bx bx-check-square"></i>
           <h4>Responsive Design</h4>
+        </div>
+        <div class="skills-card bordershine">
+          <i class="bx bxl-nodejs"></i>
+          <h4>Node.js</h4>
+        </div>
+        <div class="skills-card bordershine">
+          <i class="bx bxl-redux"></i>
+          <h4>Redux</h4>
+        </div>
+        <div class="skills-card bordershine">
+          <i class="bx bxl-css3"></i>
+          <h4>Tailwind CSS</h4>
         </div>
       </div>
       <div class="container-skills">
@@ -117,12 +131,24 @@ application design.
           <h4>git & github</h4>
         </div>
         <div class="skills-card bordershine bootstrap">
-          <i class="bx bxl-bootstrap" style="color: wheat"></i>
+          <i class="bx bxl-bootstrap"></i>
           <h4>Bootstrap</h4>
         </div>
         <div class="skills-card bordershine firebase">
-          <i class="bx bxl-firebase" style="color: wheat"></i>
+          <i class="bx bxl-firebase"></i>
           <h4>firebase</h4>
+        </div>
+        <div class="skills-card bordershine">
+          <i class="bx bx-data"></i>
+          <h4>MongoDB</h4>
+        </div>
+        <div class="skills-card bordershine">
+          <i class="bx bx-server"></i>
+          <h4>Express</h4>
+        </div>
+        <div class="skills-card bordershine">
+          <i class="bx bx-cloud"></i>
+          <h4>Supabase</h4>
         </div>
       </div>
       <div class="container-skills">
@@ -131,177 +157,116 @@ application design.
           <h4>Css</h4>
         </div>
         <div class="skills-card bordershine javascript">
-          <i class="bx bxl-javascript" style="color: wheat"></i>
+          <i class="bx bxl-javascript"></i>
           <h4>JavaScript</h4>
         </div>
-        <div class="skills-card bordershine webteck">
-          <i class="bx bx-expand-horizontal" style="color: wheat"></i>
+        <div class="skills-card bordershine">
+          <i class="bx bx-expand-horizontal"></i>
           <h4>UI and UX</h4>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" style="background-color: #1212124b; color: #fff; padding: 60px 20px;">
-    <div style="max-width: 1000px; min-height: 75vh; margin: auto;">
-      <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: wheat;">
-        My Projects
-      </h2>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-
-        <!-- Project Card 1 -->
-        <div
-          style="background: #1e1e1e40; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-          <img src="https://i.ibb.co/bg6qz4FG/image.png" alt="Project 1"
-            style="width: 100%; height: 180px; object-fit: cover;">
-          <div style="padding: 20px;">
-            <h3 style="margin-bottom: 10px; color: wheat;">Excel to Chart Tool</h3>
-            <p style="color: #bbb;">A web app to upload Excel files, analyze data, and generate interactive charts with
-              AI insights.</p>
-            <a href="https://github.com/girishkuwar/Mern_FrontEnd" target="_blank"
-              style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: wheat; color: #121212; text-decoration: none; border-radius: 5px; font-weight: bold;">View
-              Project</a>
-          </div>
+        <div class="skills-card bordershine">
+          <i class="bx bx-code-curly"></i>
+          <h4>TypeScript</h4>
         </div>
-
-        <!-- Project Card 2 -->
-        <div
-          style="background: #1e1e1e40; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-          <img src="https://i.ibb.co/JjpH4fHm/image.png" alt="Project 3"
-            style="width: 100%; height: 180px; object-fit: cover;">
-          <div style="padding: 20px;">
-            <h3 style="margin-bottom: 10px; color: wheat;">Navnath Traders</h3>
-            <p style="color: #bbb;">An e-commerce website for bathroom and kitchen products like showers, sinks, and
-              accessories.</p>
-            <a href="https://github.com/girishkuwar/navnath-shop" target="_blank"
-              style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: wheat; color: #121212; text-decoration: none; border-radius: 5px; font-weight: bold;">View
-              Project</a>
-          </div>
+        <div class="skills-card bordershine">
+          <i class="bx bx-data"></i>
+          <h4>SQL</h4>
         </div>
-
-
-        <!-- Project Card 3 -->
-        <div
-          style="background: #1e1e1e40; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-          <img src="https://i.ibb.co/DgRL0fTJ/image.png" alt="Project 3"
-            style="width: 100%; height: 180px; object-fit: cover;">
-          <div style="padding: 20px;">
-            <h3 style="margin-bottom: 10px; color: wheat;">GameShop</h3>
-            <p style="color: #bbb;">An online store for games built with React and Supabase, featuring product listings
-              and a shopping cart.</p>
-            <a href="https://github.com/girishkuwar/Gameshop" target="_blank"
-              style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: wheat; color: #121212; text-decoration: none; border-radius: 5px; font-weight: bold;">View
-              Project</a>
-          </div>
-        </div>
-
-        <!-- Project Card 4 -->
-        <div
-          style="background: #1e1e1e40; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-          <img src="https://i.ibb.co/fz8nqs3N/image.png" alt="Project 3"
-            style="width: 100%; height: 180px; object-fit: cover;">
-          <div style="padding: 20px;">
-            <h3 style="margin-bottom: 10px; color: wheat;">Code Snippet Saver</h3>
-            <p style="color: #bbb;">A public code snippet storage platform where developers can save, share, and explore
-              code examples.</p>
-            <a href="https://github.com/girishkuwar/snip-It" target="_blank"
-              style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: wheat; color: #121212; text-decoration: none; border-radius: 5px; font-weight: bold;">View
-              Project</a>
-          </div>
-        </div>
-
-        <!-- Project Card 5 -->
-
-        <div
-          style="background: #1e1e1e40; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-          <img src="https://images.alphacoders.com/475/475526.jpg" alt="Project 2"
-            style="width: 100%; height: 180px; object-fit: cover;">
-          <div style="padding: 20px;">
-            <h3 style="margin-bottom: 10px; color: wheat;">Confession Website</h3>
-            <p style="color: #bbb;">An anonymous confession platform where anyone can write and share their feelings
-              publicly without replies.</p>
-            <a href="https://github.com/girishkuwar/let-it-out" target="_blank"
-              style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: wheat; color: #121212; text-decoration: none; border-radius: 5px; font-weight: bold;">View
-              Project</a>
-          </div>
-        </div>
-
-
-        <!-- Project Card 6 -->
-
-        <div
-          style="background: #1e1e1e40; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-top: 20px;">
-          <img src="https://i.postimg.cc/SQcDYWG5/image.png" alt="Todo List"
-            style="width: 100%; height: 180px; object-fit: cover;">
-          <div style="padding: 20px;">
-            <h3 style="margin-bottom: 10px; color: wheat;">Todo List</h3>
-            <p style="color: #bbb;">A React-based todo list app that saves tasks in localStorage for persistent data.
-            </p>
-            <a href="https://github.com/girishkuwar/todolist" target="_blank"
-              style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: wheat; color: #121212; text-decoration: none; border-radius: 5px; font-weight: bold;">View
-              Project</a>
-          </div>
-        </div>
-
-        <!-- Project Card 7 -->
-
-        <div
-          style="background: #1e1e1e40; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-top: 20px;">
-          <img src="https://i.postimg.cc/SQcDYWG5/image.png" alt="Todo List"
-            style="width: 100%; height: 180px; object-fit: cover;">
-          <div style="padding: 20px;">
-            <h3 style="margin-bottom: 10px; color: wheat;">Name Corection</h3>
-            <p style="color: #bbb;">Name Corrector is a desktop CSV/Excel editing tool designed for high-volume text
-              cleanup and standardized name correction workflows.
-              It combines:
-              A raw CSV text editor for direct control
-              A synchronized table view for fast interactive edits
-              Mapping-based name normalization tools for repetitive cleanup tasks
-            </p>
-            <a href="https://github.com/girishkuwar/todolist" target="_blank"
-              style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: wheat; color: #121212; text-decoration: none; border-radius: 5px; font-weight: bold;">View
-              Project</a>
-          </div>
-        </div>
-
-        <!-- Project Card 8 -->
-
-        <div
-          style="background: #1e1e1e40; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-top: 20px;">
-          <img src="https://i.postimg.cc/SQcDYWG5/image.png" alt="Todo List"
-            style="width: 100%; height: 180px; object-fit: cover;">
-          <div style="padding: 20px;">
-            <h3 style="margin-bottom: 10px; color: wheat;">Saas Management</h3>
-            <p style="color: #bbb;">A comprehensive SaaS (Software as a Service) management platform with a modern
-              React-based frontend and a robust Node.js/Fastify backend. This project enables administrators to manage
-              organizations, users, products, and subscription plans.
-            </p>
-            <a href="https://github.com/girishkuwar/todolist" target="_blank"
-              style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: wheat; color: #121212; text-decoration: none; border-radius: 5px; font-weight: bold;">View
-              Project</a>
-          </div>
-        </div>
-
-        <!-- Project Card 9 -->
-
-        <div
-          style="background: #1e1e1e40; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-top: 20px;">
-          <img src="https://i.postimg.cc/SQcDYWG5/image.png" alt="Todo List"
-            style="width: 100%; height: 180px; object-fit: cover;">
-          <div style="padding: 20px;">
-            <h3 style="margin-bottom: 10px; color: wheat;">Batch File Tool</h3>
-            <p style="color: #bbb;">A Electron Desktop App For Batch File Editing
-            </p>
-            <a href="https://github.com/girishkuwar/todolist" target="_blank"
-              style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: wheat; color: #121212; text-decoration: none; border-radius: 5px; font-weight: bold;">View
-              Project</a>
-          </div>
+        <div class="skills-card bordershine">
+          <i class="bx bx-cube"></i>
+          <h4>.NET</h4>
         </div>
       </div>
     </div>
   </section>
 
+  <section id="projects" class="projects">
+    <div class="projects-wrap">
+      <h2 class="projects-title">My Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="https://i.ibb.co/bg6qz4FG/image.png" alt="Excel to Chart Tool" class="project-image" />
+          <div class="project-content">
+            <h3>Excel to Chart Tool</h3>
+            <p>A web app to upload Excel files, analyze data, and generate interactive charts with AI insights.</p>
+            <a href="https://github.com/girishkuwar/Mern_FrontEnd" target="_blank" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://i.ibb.co/JjpH4fHm/image.png" alt="Navnath Traders" class="project-image" />
+          <div class="project-content">
+            <h3>Navnath Traders</h3>
+            <p>An e-commerce website for bathroom and kitchen products like showers, sinks, and accessories.</p>
+            <a href="https://github.com/girishkuwar/navnath-shop" target="_blank" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://i.ibb.co/DgRL0fTJ/image.png" alt="GameShop" class="project-image" />
+          <div class="project-content">
+            <h3>GameShop</h3>
+            <p>An online store for games built with React and Supabase, featuring product listings and a shopping cart.</p>
+            <a href="https://github.com/girishkuwar/Gameshop" target="_blank" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://i.ibb.co/fz8nqs3N/image.png" alt="Code Snippet Saver" class="project-image" />
+          <div class="project-content">
+            <h3>Code Snippet Saver</h3>
+            <p>A public code snippet storage platform where developers can save, share, and explore code examples.</p>
+            <a href="https://github.com/girishkuwar/snip-It" target="_blank" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.alphacoders.com/475/475526.jpg" alt="Confession Website" class="project-image" />
+          <div class="project-content">
+            <h3>Confession Website</h3>
+            <p>An anonymous confession platform where anyone can write and share their feelings publicly without replies.</p>
+            <a href="https://github.com/girishkuwar/let-it-out" target="_blank" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://i.postimg.cc/SQcDYWG5/image.png" alt="Todo List" class="project-image" />
+          <div class="project-content">
+            <h3>Todo List</h3>
+            <p>A React-based todo list app that saves tasks in localStorage for persistent data.</p>
+            <a href="https://github.com/girishkuwar/todolist" target="_blank" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://i.postimg.cc/SQcDYWG5/image.png" alt="Name Correction" class="project-image" />
+          <div class="project-content">
+            <h3>Name Correction</h3>
+            <p>Name Corrector is a desktop CSV and Excel editing tool for high-volume text cleanup and standardized name correction workflows.</p>
+            <a href="https://github.com/girishkuwar/todolist" target="_blank" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://i.postimg.cc/SQcDYWG5/image.png" alt="SaaS Management" class="project-image" />
+          <div class="project-content">
+            <h3>SaaS Management</h3>
+            <p>A SaaS management platform with a React frontend and Node.js Fastify backend for organizations, users, products, and plans.</p>
+            <a href="https://github.com/girishkuwar/todolist" target="_blank" class="project-link">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://i.postimg.cc/SQcDYWG5/image.png" alt="Batch File Tool" class="project-image" />
+          <div class="project-content">
+            <h3>Batch File Tool</h3>
+            <p>An Electron desktop app for batch file editing.</p>
+            <a href="https://github.com/girishkuwar/todolist" target="_blank" class="project-link">View Project</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <section id="contact" class="contact">
     <h1>Want to get in touch?<br />Drop me a line!</h1>
@@ -317,8 +282,7 @@ application design.
         </div>
         <div class="row">
           <textarea placeholder="Your Message" name="message" id="message" cols="30" rows="10"></textarea>
-          <input type="text" name="_gotcha" style="display:none">
-
+          <input type="text" name="_gotcha" style="display:none" />
         </div>
         <button type="submit" class="bbutns">Submit</button>
         <div id="form-status"></div>
@@ -329,7 +293,7 @@ application design.
           <h5>+919975256932</h5>
         </div>
         <div class="info">
-          <h4>linkendin</h4>
+          <h4>LinkedIn</h4>
           <h5>
             <a href="https://www.linkedin.com/in/girishkuwar/">linkedin.com/in/girishkuwar/</a>
           </h5>
@@ -343,9 +307,9 @@ application design.
       </div>
     </div>
   </section>
+
   <script src="js/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </body>
 
 </html>
