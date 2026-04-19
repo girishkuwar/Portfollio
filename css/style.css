@@ -1034,8 +1034,9 @@ i a {
 
 @media (max-width: 540px) {
   .hero {
-    padding-top: 88px;
-    min-height: 86vh;
+    padding-top: 160px;
+    min-height: 90vh;
+    padding-left: 4%;
   }
 
   .projects-grid {
@@ -1077,7 +1078,7 @@ i a {
 
 @media (max-width: 400px) {
   .container-skills {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .container-skills .skills-card {
