@@ -176,6 +176,11 @@ section {
   margin-inline: auto;
 }
 
+img,
+video {
+  max-width: 100%;
+}
+
 .hero {
   min-height: 100vh;
   display: grid;
@@ -247,6 +252,11 @@ section {
   transition: all 0.3s ease;
   color: var(--text);
   background: rgba(255, 255, 255, 0.04);
+  text-decoration: none;
+}
+
+i a {
+  text-decoration: none !important;
 }
 
 .links i:hover {
@@ -365,7 +375,7 @@ section {
 
 .education {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 40px;
 }
@@ -884,15 +894,32 @@ section {
 }
 
 @media (max-width: 980px) {
+  section {
+    width: min(1160px, 94%);
+  }
+
   .education,
   .skills {
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
 
   .education-copy,
   .education-timeline {
     width: 100%;
+  }
+
+  .skewed-container {
+    transform: none;
+    padding: 12px 0;
+  }
+
+  .normal-container .skew-content {
+    transform: none;
+  }
+
+  .divider {
+    margin-left: 14px;
   }
 
   .skills-container {
@@ -919,6 +946,10 @@ section {
 }
 
 @media (max-width: 760px) {
+  section {
+    width: min(1160px, 95%);
+  }
+
   .navlist {
     padding: 8px 16px;
   }
@@ -953,15 +984,34 @@ section {
 
   .hero {
     text-align: left;
+    min-height: 90vh;
+    padding-top: 96px;
+  }
+
+  .hero .heading {
+    max-width: 100%;
+  }
+
+  .hero h4 {
+    margin-top: 10px;
   }
 
   .education-tags span {
     font-size: 0.8rem;
   }
 
+  .about .container {
+    padding: 22px 18px;
+  }
+
+  .about .container p {
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+
   .container-skills {
     transform: none;
-    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
   }
 
   .container-skills .skills-card {
@@ -985,6 +1035,7 @@ section {
 @media (max-width: 540px) {
   .hero {
     padding-top: 88px;
+    min-height: 86vh;
   }
 
   .projects-grid {
@@ -1005,6 +1056,36 @@ section {
 
   .container-skills {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .container-skills .skills-card {
+    height: 118px;
+  }
+
+  .skills-card i {
+    font-size: 2rem;
+  }
+
+  .project-content {
+    padding: 14px;
+  }
+
+  .contact h1 {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-skills {
+    grid-template-columns: 1fr;
+  }
+
+  .container-skills .skills-card {
+    height: 110px;
+  }
+
+  .skills-card h4 {
+    font-size: 0.88rem;
   }
 }
 
