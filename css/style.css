@@ -813,7 +813,7 @@ i a {
 }
 
 .from-right {
-  transform: translateX(42px);
+  transform: translateX(-42px);
 }
 
 .scroll-animate.visible {
