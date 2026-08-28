@@ -4,6 +4,8 @@ navLinks.forEach((link) => {
   link.addEventListener("click", function () {
     document.querySelector("#navlist .selected")?.classList.remove("selected");
     this.parentElement.classList.add("selected");
+    navlistR?.classList.remove("open");
+    menu?.classList.remove("bx-x");
   });
 });
 
