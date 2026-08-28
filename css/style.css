@@ -210,6 +210,12 @@ video {
   color: var(--muted);
 }
 
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .bbutns {
   margin-top: 24px;
   background: linear-gradient(120deg, var(--accent), #d15a60);
@@ -222,6 +228,8 @@ video {
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 10px 22px rgba(222, 43, 51, 0.2);
+  display: inline-block;
+  text-decoration: none;
 }
 
 .bbutns:hover {
